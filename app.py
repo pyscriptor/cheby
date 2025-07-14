@@ -3,6 +3,7 @@ from sympy import kronecker_symbol, nextprime
 from sympy.ntheory.primetest import is_square
 import ast
 import operator
+import waitress
 
 # --- Start of code from cheby.py ---
 
