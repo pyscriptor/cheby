@@ -258,5 +258,5 @@ def index():
     return render_template_string(HTML_TEMPLATE, result=result_text, last_input=last_input)
 
 if __name__ == '__main__':
-    # For production, use a proper WSGI server instead of app.run()
-    app.run(debug=True, port=0000)
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
